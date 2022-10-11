@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="meja"></h3>
+<script>
+
+    function human (fname,lname){
+         //properti
+        this.fname = fname;
+        this.lname = lname;
+        //method
+        this.namalengkap = function(){
+            return `${this.fname} ${this.lname}`;
+        }
+    }
+    var orang1 = new human("Jeff", "Bezos");
+    var orang2 = new human("Bill", "Gates");
+    var orang3 = new human("Elon", "Musk");
+    var orang4 = new human("Mark", "Zuckerberg");
+    var orang5 = new human("Nikola", "Tesla" );
+    var orang6 = new human("Napoleon", "Bonaparte");
+    var orang7 = new human("Albert", "Einstein");
+
+    document.getElementById("meja").innerHTML = "Orang 1 adalah : " + orang1.namalengkap() + "<br>" 
+    + "Orang 2 adalah : " + orang2.namalengkap() + "<br>" + "Orang 3 adalah : " + orang3.namalengkap() + "<br>"
+    + "Orang 4 adalah : " + orang4.namalengkap() + "<br>" + "Orang 5 adalah : " + orang5.namalengkap() + "<br>"
+    + "Orang 6 adalah : " + orang6.namalengkap() + "<br>" + "Orang 7 adalah : " + orang7.namalengkap() + "<br>"
+       
+
+</script>
+
+</body>
+</html>

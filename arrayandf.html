@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> ARRAY AND FUNCTION </h2>
+    <p id="long">ini hasilnya</p>
+
+    <script>
+
+        var eternals = ["Ajak", "Gilgamesh", "Thena"];
+
+        let hero = ["monyet", "gajah", "singa"];
+        var test = ""
+        function myFugsi(value, array){
+            test += value + "<br>";
+        }
+
+        eternals.forEach(myFugsi);
+        hero.forEach(myFugsi);
+        document.getElementById("long").innerHTML = test;
+
+
+    </script>
+
+
+</body>
+</html>

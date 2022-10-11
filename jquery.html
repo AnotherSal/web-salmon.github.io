@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#show").click(function(){
+                $("#text").show()
+            });
+        });
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#text").hide()
+            });
+        });
+        $(document).ready(function(){
+            $("#fadein").click(function(){
+                $("#text").fadeIn()
+            });
+        });
+        $(document).ready(function(){
+            $("#fadeout").click(function(){
+                $("#text").fadeOut()
+            });
+        });
+    </script>
+
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+
+    <h2 id="text" style="display:none">Konnichiwa!</h2>
+
+</body>
+</html>

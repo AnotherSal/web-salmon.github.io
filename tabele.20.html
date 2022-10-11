@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function(){
+    $("#4794").on("keyup", function(){
+      var value = $(this).val().toLowerCase();
+      $("#mejaorang tr").filter(function(){
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > 0);
+        });
+      });
+    });
+</script>   
+<style>
+    table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    input {
+        border-radius: 5px;
+        height: auto;
+        font-size: 15px;
+        width: 300px;
+    }
+    thead {
+        background-color: aqua;
+    }
+    tr :nth-child(even) {
+        background-color: aqua;
+    }
+    table{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    html{
+        text-align: center;
+    }
+    td, th {
+        border: 1px solid red;
+        text-align: left;
+        padding: 8px;
+        
+    }
+</style>
+
+
+
+
+
+
+
+    <h2>filter meja</h2>
+    <input type="text" id="4794" placeholder="ketik sini..."><br><br>
+    <table>
+        <thead>
+            <tr>
+               <td>First Name</td>
+               <td>Bani</td>
+               <td>bintaro</td> 
+            </tr>
+        </thead>
+        <tbody id="mejaorang">
+            <tr>
+                <td>Hina</td>
+                <td>Baka</td>
+                <td>jaksel</td> 
+            </tr>
+            <tr>
+                <td>Nana</td>
+                <td>Hoshi</td>
+                <td>bekasi</td> 
+             </tr>
+        </tbody>
+    </table>
+</body>
+</html>

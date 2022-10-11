@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dolar 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+#panesll, #slide{
+    background-color: aqua;
+    font-family: fantasy;
+    border: 99px solid yellow;
+    text-align: center;
+    padding: 5px;
+}
+#panell{
+    display: none;
+    padding: 110px;
+}
+#menggeser{ background-color: aqua;
+    
+}
+</style>
+<script>
+    $(document).ready(function(){
+        $("#slide").dblclick(function(){
+            $("#panell").slideDown("slow");
+        }); 
+    }); 
+    $(document).ready(function(){
+        $("button").mouseenter(function(){
+            var idk = $("#menggeser");
+            idk.animate({left : "100px"}, fast);
+            idk.animate({fontSize: "200px"}, fast );
+        });
+    });
+
+</script>
+<body>
+    <div id="slide">klik biar bisa slide</div>
+    <div id="panell">ini isinya</div>
+    <button>Geserr</button>
+    <div id="menggeser">geser</div>
+    
+</body>
+</html>

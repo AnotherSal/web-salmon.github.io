@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+body{
+
+    text-align: center;
+    color: red;
+    font-size: 50px;
+    font-family: sans-serif;
+
+}
+
+
+
+
+</style>
+<body>
+    <h2 id="hisalny"></h2>
+    <h3 id="hasil"></h3>
+    <h4 id="hisal"></h4>
+</body>
+<script>
+
+//membuat objek
+var murid = {
+
+      lang : "Salman",
+      lastname : "Zaidan",
+      age : 10,
+      tamala : "Dunia"
+};
+
+//display data
+
+document.getElementById("hisalny").innerHTML = murid.lang  + " " + murid.lastname + "<br>" +
+"He is" + " " + murid.age + " " + "years old." + " " + "She lives in" + " " + murid.tamala;
+
+
+
+</script>
+</html>
